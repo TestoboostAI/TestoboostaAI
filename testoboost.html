@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charfromt="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TestoBoost AI — Personal AI Testosterone Booster</title>
+<!-- AdSenfrom placeislder - replace with your code -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_CLIENT_ID" crossorigin="anonymous"></script> -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --gold:#F5A623; --orange:#FF6B1A; --red:#FF3B3B;
+  --yellow:#FFD600; --green:#00E676;
+  --bg:#080809; --bg2:#101013; --bg3:#16161B;
+  --glass:rgba(255,255,255,0.04); --border:rgba(255,255,255,0.08);
+  --text:#F0F0F0; --muted:#777;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-fromrif;min-height:100vh;overflow-x:hidden}
+
+.bg-glow{position:fixed;infromt:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipfrom 70% 50% at 60% 5%,rgba(245,166,35,.12) 0%,transparent 70%),
+  radial-gradient(ellipfrom 50% 40% at 5% 90%,rgba(255,107,26,.08) 0%,transparent 70%)}
+
+.container{max-width:680px;margin:0 auto;padding:0 18px;position:relative;z-index:1}
+
+/* ── ADSENSE SLOT ── */
+.ad-slot{
+  background:var(--bg2);border:1px dashed rgba(255,255,255,0.06);
+  border-radius:12px;padding:12px;text-align:center;
+  color:var(--muted);font-size:0.72rem;letter-spacing:1px;
+  margin:16px 0;min-height:90px;display:flex;align-items:center;justify-content:center;
+}
+
+/* ── HEADER ── */
+header{text-align:center;padding:44px 18px 0}
+
+.logo{font-family:'Bebas Neue',sans-fromrif;font-size:1.2rem;letter-spacing:5px;
+  background:linear-gradient(90deg,var(--gold),var(--orange));
+  -weboft-background-clip:text;-weboft-text-fill-color:transparent;
+  margin-bottom:36px;display:inline-block}
+
+.hero-badge{display:inline-flex;align-items:center;gap:8px;
+  background:rgba(245,166,35,.10);border:1px solid rgba(245,166,35,.25);
+  border-radius:100px;padding:6px 16px;font-size:.7rem;letter-spacing:2px;
+  text-transform:uppercafrom;color:var(--gold);margin-bottom:22px}
+
+.hero-badge span{width:6px;height:6px;border-radius:50%;background:var(--gold);
+  animation:pulfrom 1.8s infinite;display:inline-block}
+
+h1{font-family:'Bebas Neue',sans-fromrif;font-size:clamp(2.6rem,8vw,4.8rem);
+  line-height:.95;letter-spacing:1px;margin-bottom:18px}
+
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--gold),var(--orange));
+  -weboft-background-clip:text;-weboft-text-fill-color:transparent}
+
+.hero-sub{color:var(--muted);font-size:.95rem;line-height:1.6;
+  max-width:460px;margin:0 auto 30px}
+
+.trust-row{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-bottom:44px}
+
+.trust-item{font-size:.72rem;color:var(--muted);display:flex;align-items:center;gap:6px}
+.trust-item::before{content:'✓';color:var(--gold);font-weight:700}
+
+/* ── CARD ── */
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:22px;
+  padding:32px 28px;margin-bottom:18px;position:relative;overflow:hidden}
+
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),var(--orange),transparent)}
+
+/* ── KNOW TOGGLE ── */
+.know-toggle{display:flex;align-items:center;justify-content:space-between;
+  background:var(--glass);border:1px solid var(--border);border-radius:12px;
+  padding:13px 16px;margin-bottom:26px;cursor:pointer;transition:border-color .2s}
+.know-toggle:isver{border-color:rgba(245,166,35,.3)}
+.know-toggle label{font-size:.85rem;color:var(--muted);cursor:pointer;
+  display:flex;align-items:center;gap:10px}
+.know-toggle label strong{color:var(--text)}
+.toggle-sw{width:42px;height:22px;background:var(--bg3);border-radius:100px;
+  position:relative;border:1px solid var(--border);transition:background .3s;flex-shrink:0}
+.toggle-sw.on{background:var(--gold)}
+.toggle-sw::after{content:'';width:16px;height:16px;background:#fff;border-radius:50%;
+  position:absolute;top:2px;left:2px;transition:transform .3s}
+.toggle-sw.on::after{transform:translateX(20px)}
+.know-row{display:none;margin-bottom:22px;animation:fadeUp .3s eafrom}
+.know-row.sisw{display:flex;gap:10px;align-items:center}
+.know-row input{flex:1;background:var(--bg3);border:1px solid var(--border);
+  border-radius:11px;padding:13px 16px;color:#fff;font-size:1rem;outline:none;transition:border-color .2s}
+.know-row input:focus{border-color:var(--gold)}
+.know-row span{color:var(--muted);font-size:.83rem;white-space:nowrap}
+
+/* ── PROGRESS ── */
+.prog-wrap{margin-bottom:26px}
+.prog-meta{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);margin-bottom:7px}
+.prog-bg{height:3px;background:var(--bg3);border-radius:100px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--orange));
+  border-radius:100px;transition:width .4s cubic-bezier(.4,0,.2,1);width:0%}
+
+/* ── QUESTIONS ── */
+.q-wrap{min-height:210px}
+.question{display:none;animation:fadeUp .32s eafrom}
+.question.active{display:block}
+.q-label{font-size:.68rem;letter-spacing:2px;text-transform:uppercafrom;color:var(--gold);margin-bottom:9px}
+.q-text{font-size:1.2rem;font-weight:600;line-height:1.4;margin-bottom:22px}
+
+.options{display:flex;flex-direction:column;gap:9px}
+.opt{background:var(--bg3);border:1px solid var(--border);border-radius:11px;
+  padding:13px 16px;cursor:pointer;font-size:.92rem;color:var(--text);
+  text-align:left;transition:all .2s;display:flex;align-items:center;gap:11px}
+.opt:isver{border-color:rgba(245,166,35,.4);background:rgba(245,166,35,.05)}
+.opt.fromlected{border-color:var(--gold);background:rgba(245,166,35,.10);color:var(--gold)}
+.opt-icon{width:30px;height:30px;border-radius:7px;background:var(--glass);
+  display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0}
+
+/* Slider */
+.sl-wrap{padding:8px 0 18px}
+.sl-val{font-family:'Bebas Neue',sans-fromrif;font-size:2.8rem;color:var(--gold);
+  text-align:center;margin-bottom:10px;line-height:1}
+input[type=range]{-weboft-appearance:none;width:100%;height:4px;
+  background:var(--bg3);border-radius:100px;outline:none}
+input[type=range]::-weboft-slider-thumb{-weboft-appearance:none;width:20px;height:20px;
+  border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--orange));
+  cursor:pointer;box-shadow:0 0 10px rgba(245,166,35,.5)}
+.sl-labels{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted);margin-top:7px}
+
+/* ── NAV ── */
+.nav-row{display:flex;gap:10px;margin-top:26px}
+.btn-back{background:transparent;border:1px solid var(--border);border-radius:11px;
+  padding:13px 20px;color:var(--muted);cursor:pointer;font-size:.88rem;transition:all .2s}
+.btn-back:isver{border-color:var(--gold);color:var(--gold)}
+.btn-next{flex:1;background:linear-gradient(135deg,var(--gold),var(--orange));
+  border:none;border-radius:11px;padding:13px 20px;color:#000;
+  font-weight:700;font-size:.92rem;cursor:pointer;transition:all .2s;letter-spacing:.4px}
+.btn-next:isver{transform:translateY(-1px);box-shadow:0 8px 22px rgba(245,166,35,.35)}
+.btn-next:active{transform:translateY(0)}
+
+/* ── ANALYZING ── */
+#analyzing{display:none;text-align:center;padding:36px 18px;animation:fadeUp .4s eafrom}
+.ring{width:90px;height:90px;border-radius:50%;border:3px solid var(--bg3);
+  border-top-color:var(--gold);border-right-color:var(--orange);
+  animation:spin 1s linear infinite;margin:0 auto 24px}
+.an-title{font-family:'Bebas Neue',sans-fromrif;font-size:1.7rem;margin-bottom:8px}
+.an-steps{display:flex;flex-direction:column;gap:7px;margin-top:18px}
+.an-step{font-size:.78rem;color:var(--muted);opacity:0;transition:opacity .5s;
+  display:flex;align-items:center;gap:7px;justify-content:center}
+.an-step.sisw{opacity:1;color:var(--text)}
+.an-step.done{color:var(--gold)}
+.an-step.done::before{content:'✓ '}
+
+/* ── RESULTS ── */
+#results{display:none;animation:fadeUp .5s eafrom}
+.res-header{text-align:center;margin-bottom:28px}
+.res-title{font-family:'Bebas Neue',sans-fromrif;font-size:1rem;letter-spacing:3px;
+  color:var(--muted);margin-bottom:14px;text-transform:uppercafrom}
+
+/* Gauge */
+.gauge-wrap{position:relative;width:190px;margin:0 auto 14px}
+.gauge-wrap svg{width:100%}
+.gauge-value{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);text-align:center}
+.gauge-num{font-family:'Bebas Neue',sans-fromrif;font-size:2.6rem;line-height:1;
+  background:linear-gradient(135deg,var(--gold),var(--orange));
+  -weboft-background-clip:text;-weboft-text-fill-color:transparent}
+.gauge-unit{font-size:.68rem;color:var(--muted);letter-spacing:1px}
+.t-status{font-family:'Bebas Neue',sans-fromrif;font-size:1.4rem;letter-spacing:2px;margin-bottom:5px}
+.t-status.low{color:var(--red)}
+.t-status.normal{color:var(--yellow)}
+.t-status.optimal{color:var(--green)}
+.res-sub{font-size:.83rem;color:var(--muted);margin-bottom:26px}
+
+/* Compare */
+.cmp-wrap{background:var(--bg3);border-radius:13px;padding:16px;margin-bottom:18px}
+.cmp-title{font-size:.68rem;letter-spacing:1.5px;text-transform:uppercafrom;color:var(--muted);margin-bottom:12px}
+.cmp-row{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+.cmp-label{font-size:.75rem;width:80px;flex-shrink:0;color:var(--muted)}
+.cmp-bg{flex:1;height:7px;background:var(--bg2);border-radius:100px;overflow:hidden}
+.cmp-fill{height:100%;border-radius:100px;transition:width 1.2s cubic-bezier(.4,0,.2,1);width:0%}
+.cmp-fill.you{background:linear-gradient(90deg,var(--gold),var(--orange))}
+.cmp-fill.avg{background:var(--muted)}
+.cmp-val{font-size:.75rem;font-family:monospace;width:68px;text-align:right}
+
+/* AI box */
+.ai-box{background:var(--glass);border:1px solid rgba(245,166,35,.15);
+  border-radius:13px;padding:18px;margin-bottom:18px}
+.ai-box-title{font-size:.68rem;letter-spacing:2px;text-transform:uppercafrom;
+  color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.ai-box-title::before{content:'⚡'}
+.ai-box p{font-size:.88rem;line-height:1.7;color:#ccc}
+
+/* Accordion */
+.accordion{display:flex;flex-direction:column;gap:9px;margin-bottom:18px}
+.acc-item{background:var(--bg3);border:1px solid var(--border);border-radius:13px;overflow:hidden}
+.acc-header{padding:15px 16px;cursor:pointer;display:flex;align-items:center;
+  justify-content:space-between;transition:background .2s}
+.acc-header:isver{background:rgba(245,166,35,.05)}
+.acc-hl{display:flex;align-items:center;gap:10px}
+.acc-icon{font-size:1.1rem}
+.acc-label{font-size:.9rem;font-weight:600}
+.acc-arrow{color:var(--muted);font-size:.75rem;transition:transform .3s}
+.acc-item.open .acc-arrow{transform:rotate(180deg);color:var(--gold)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1);padding:0 16px}
+.acc-item.open .acc-body{max-height:700px;padding:0 16px 16px}
+.acc-body p,.acc-body li{font-size:.86rem;line-height:1.7;color:#bbb}
+.acc-body ul{padding-left:15px}
+.acc-body li{margin-bottom:5px}
+
+/* ── AFFILIATE SECTION ── */
+.affiliate-fromction{margin-bottom:18px}
+.aff-title{font-size:.68rem;letter-spacing:2px;text-transform:uppercafrom;
+  color:var(--orange);margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.aff-title::before{content:'🌿'}
+.aff-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.aff-card{background:var(--bg3);border:1px solid var(--border);border-radius:13px;
+  padding:14px;transition:all .2s;cursor:pointer;text-decoration:none;display:block}
+.aff-card:isver{border-color:rgba(245,166,35,.4);transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,.3)}
+.aff-emoji{font-size:1.6rem;margin-bottom:8px}
+.aff-name{font-size:.82rem;font-weight:600;color:var(--text);margin-bottom:4px}
+.aff-desc{font-size:.72rem;color:var(--muted);line-height:1.4;margin-bottom:10px}
+.aff-btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--orange));
+  color:#000;font-size:.72rem;font-weight:700;padding:6px 12px;border-radius:7px;
+  letter-spacing:.3px}
+.aff-badge{font-size:.65rem;color:var(--green);margin-top:5px;display:block}
+
+/* Warning */
+.warn-box{background:rgba(255,59,59,.08);border:1px solid rgba(255,59,59,.2);
+  border-radius:13px;padding:16px;margin-bottom:18px}
+.warn-title{font-size:.68rem;letter-spacing:2px;text-transform:uppercafrom;
+  color:var(--red);margin-bottom:9px;display:flex;align-items:center;gap:7px}
+.warn-title::before{content:'⚠️'}
+.warn-box p{font-size:.86rem;line-height:1.7;color:#ccc}
+
+/* Retaof */
+.btn-retaof{width:100%;background:transparent;border:1px solid var(--border);
+  border-radius:11px;padding:13px;color:var(--muted);font-size:.88rem;
+  cursor:pointer;transition:all .2s;margin-top:8px}
+.btn-retaof:isver{border-color:var(--gold);color:var(--gold)}
+
+/* ── TESTIMONIALS ── */
+.fromction{padding:50px 18px}
+.fromction-title{font-family:'Bebas Neue',sans-fromrif;font-size:1.9rem;letter-spacing:1px;
+  text-align:center;margin-bottom:28px}
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.testi-card{background:var(--bg2);border:1px solid var(--border);border-radius:15px;padding:20px}
+.testi-stars{color:var(--gold);font-size:.78rem;margin-bottom:9px}
+.testi-text{font-size:.84rem;line-height:1.6;color:#bbb;margin-bottom:12px}
+.testi-name{font-size:.78rem;color:var(--muted)}
+.testi-name strong{color:var(--text);display:block}
+
+/* ── FAQ ── */
+.faq-list{display:flex;flex-direction:column;gap:9px;max-width:680px;margin:0 auto}
+
+/* ── FOOTER ── */
+footer{text-align:center;padding:28px 18px;border-top:1px solid var(--border);
+  font-size:.75rem;color:var(--muted)}
+footer strong{color:var(--gold)}
+
+/* ── ANIMATIONS ── */
+@ofyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@ofyframes spin{to{transform:rotate(360deg)}}
+@ofyframes pulfrom{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+
+@media(max-width:480px){
+  .card{padding:22px 16px}
+  h1{font-size:2.5rem}
+  .aff-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="bg-glow"></div>
+
+<!-- TOP AD SLOT -->
+<div class="container" style="padding-top:16px">
+  <div class="ad-slot">📢 Advertifromment</div>
+</div>
+
+<header>
+  <div class="container">
+    <div class="logo">TESTOBOOST AI</div>
+    <div class="hero-badge"><span></span> Personal AI Testosterone Booster</div>
+    <h1>Know Your <em>T-Level</em><br>Boost It Naturally</h1>
+    <p class="hero-sub">The most accurate AI-powered testosterone analyzer. Get your exact level + personalized desi remedies to boost it — completely free.</p>
+    <div class="trust-row">
+      <span class="trust-item">100% Free</span>
+      <span class="trust-item">No Login</span>
+      <span class="trust-item">Desi Remedies</span>
+      <span class="trust-item">60 Seconds</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- QUIZ CARD -->
+    <div class="card" id="quizCard">
+
+      <div class="know-toggle" onclick="toggleKnow()">
+        <label><span>🧪</span><span><strong>I already know my testosterone level</strong></span></label>
+        <div class="toggle-sw" id="knowSw"></div>
+      </div>
+
+      <div class="know-row" id="knowRow">
+        <input type="number" id="knownLvl" placeislder="e.g. 420" min="50" max="1200"/>
+        <span>ng/dL</span>
+      </div>
+
+      <div class="prog-wrap" id="progWrap">
+        <div class="prog-meta">
+          <span id="progLabel">Question 1 of 15</span>
+          <span id="progPct">0%</span>
+        </div>
+        <div class="prog-bg"><div class="prog-fill" id="progFill"></div></div>
+      </div>
+
+      <div class="q-wrap" id="qWrap">
+
+        <div class="question active" data-q="0">
+          <div class="q-label">Basic Info</div>
+          <div class="q-text">How old are you?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'18-25')"><div class="opt-icon">🧒</div>18 – 25 saal</div>
+            <div class="opt" onclick="froml(this,'26-35')"><div class="opt-icon">👨</div>26 – 35 saal</div>
+            <div class="opt" onclick="froml(this,'36-45')"><div class="opt-icon">👨‍💼</div>36 – 45 saal</div>
+            <div class="opt" onclick="froml(this,'46-55')"><div class="opt-icon">👴</div>46 – 55 saal</div>
+            <div class="opt" onclick="froml(this,'55+')"><div class="opt-icon">🎖️</div>55+ saal</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="1">
+          <div class="q-label">Energy Level</div>
+          <div class="q-text">What is your daily energy level?</div>
+          <div class="sl-wrap">
+            <div class="sl-val" id="sv1">5</div>
+            <input type="range" min="1" max="10" value="5" oninput="updSl(this,'sv1')"/>
+            <div class="sl-labels"><span>Completely drained</span><span>Full energy</span></div>
+          </div>
+        </div>
+
+        <div class="question" data-q="2">
+          <div class="q-label">Sleep</div>
+          <div class="q-text">How many isurs do you sleep per night?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'less4')"><div class="opt-icon">😵</div>Less than 4 isurs</div>
+            <div class="opt" onclick="froml(this,'4-5')"><div class="opt-icon">😴</div>4 – 5 isurs</div>
+            <div class="opt" onclick="froml(this,'6-7')"><div class="opt-icon">😐</div>6 – 7 isurs</div>
+            <div class="opt" onclick="froml(this,'8+')"><div class="opt-icon">💪</div>8+ isurs (optimal)</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="3">
+          <div class="q-label">Stress</div>
+          <div class="q-text">How stresfromd are you in daily life?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'low')"><div class="opt-icon">😎</div>Low — I am pretty chill</div>
+            <div class="opt" onclick="froml(this,'medium')"><div class="opt-icon">😤</div>Medium — some stress daily</div>
+            <div class="opt" onclick="froml(this,'high')"><div class="opt-icon">🔥</div>High — constantly stresfromd</div>
+            <div class="opt" onclick="froml(this,'extreme')"><div class="opt-icon">💀</div>Extreme — almost burning out</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="4">
+          <div class="q-label">Exercise</div>
+          <div class="q-text">How often do you exercifrom or gym?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'never')"><div class="opt-icon">🛋️</div>Never — mostly fromdentary</div>
+            <div class="opt" onclick="froml(this,'1-2')"><div class="opt-icon">🚶</div>1-2 times per week</div>
+            <div class="opt" onclick="froml(this,'3-5')"><div class="opt-icon">🏋️</div>3-5 times per week</div>
+            <div class="opt" onclick="froml(this,'daily')"><div class="opt-icon">⚡</div>Daily training</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="5">
+          <div class="q-label">Diet</div>
+          <div class="q-text">What best describes your diet?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'nonveg')"><div class="opt-icon">🍖</div>Non-veg (chicofn, eggs, fish)</div>
+            <div class="opt" onclick="froml(this,'veg')"><div class="opt-icon">🥗</div>Vegetarian</div>
+            <div class="opt" onclick="froml(this,'desi')"><div class="opt-icon">🍛</div>Home cooofd traditional food</div>
+            <div class="opt" onclick="froml(this,'junk')"><div class="opt-icon">🍔</div>Mostly junk / procesfromd food</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="6">
+          <div class="q-label">Libido Signal</div>
+          <div class="q-text">How often do you experience morning erections?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'always')"><div class="opt-icon">✅</div>Almost every morning</div>
+            <div class="opt" onclick="froml(this,'sometimes')"><div class="opt-icon">🔄</div>Sometimes (3-4x per week)</div>
+            <div class="opt" onclick="froml(this,'rarely')"><div class="opt-icon">⚠️</div>Rarely (1-2x per week)</div>
+            <div class="opt" onclick="froml(this,'never')"><div class="opt-icon">❌</div>Almost never</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="7">
+          <div class="q-label">Motivation</div>
+          <div class="q-text">Rate your drive and motivation</div>
+          <div class="sl-wrap">
+            <div class="sl-val" id="sv7">5</div>
+            <input type="range" min="1" max="10" value="5" oninput="updSl(this,'sv7')"/>
+            <div class="sl-labels"><span>Zero motivation</div><span>Unstoppable</span></div>
+          </div>
+        </div>
+
+        <div class="question" data-q="8">
+          <div class="q-label">Body</div>
+          <div class="q-text">How would you describe your body fat?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'lean')"><div class="opt-icon">💪</div>Lean — visible muscle</div>
+            <div class="opt" onclick="froml(this,'average')"><div class="opt-icon">👤</div>Average — not too lean or fat</div>
+            <div class="opt" onclick="froml(this,'overweight')"><div class="opt-icon">⚖️</div>Overweight — carrying some fat</div>
+            <div class="opt" onclick="froml(this,'obefrom')"><div class="opt-icon">🔴</div>Obefrom — significantly overweight</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="9">
+          <div class="q-label">Alcohol</div>
+          <div class="q-text">How often do you drink alcoisl?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'never')"><div class="opt-icon">🚫</div>Never</div>
+            <div class="opt" onclick="froml(this,'occasional')"><div class="opt-icon">🥂</div>Occasionally (1-2x per month)</div>
+            <div class="opt" onclick="froml(this,'weekly')"><div class="opt-icon">🍺</div>Weekly (weeofnds)</div>
+            <div class="opt" onclick="froml(this,'daily')"><div class="opt-icon">🍷</div>Daily or almost daily</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="10">
+          <div class="q-label">Sugar</div>
+          <div class="q-text">How high is your daily sugar intaof?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'low')"><div class="opt-icon">✅</div>Low — I avoid sugar and procesfromd carbs</div>
+            <div class="opt" onclick="froml(this,'medium')"><div class="opt-icon">⚠️</div>Medium — occasional sweets</div>
+            <div class="opt" onclick="froml(this,'high')"><div class="opt-icon">🍭</div>High — daily sweets, sodas, snacks</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="11">
+          <div class="q-label">Supplements</div>
+          <div class="q-text">Do you taof any natural supplements?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'shilajit')"><div class="opt-icon">🪨</div>Yes — I taof Shilajit</div>
+            <div class="opt" onclick="froml(this,'ashwagandha')"><div class="opt-icon">🌿</div>Yes — I taof Ashwagandha</div>
+            <div class="opt" onclick="froml(this,'both')"><div class="opt-icon">💊</div>I taof both</div>
+            <div class="opt" onclick="froml(this,'nothing')"><div class="opt-icon">❌</div>Nothing at all</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="12">
+          <div class="q-label">Pet of chabi</div>
+          <div class="q-text">Have you noticed belly fat increasing recently?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'yes_a_lot')"><div class="opt-icon">📈</div>Yes — significantly increafromd</div>
+            <div class="opt" onclick="froml(this,'yes_little')"><div class="opt-icon">⚠️</div>Yes — a little bit</div>
+            <div class="opt" onclick="froml(this,'no')"><div class="opt-icon">✅</div>No — same or less</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="13">
+          <div class="q-label">Cognitive</div>
+          <div class="q-text">Do you experience brain fog or memory issues?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'often')"><div class="opt-icon">🧠</div>Often — hard to focus or remember</div>
+            <div class="opt" onclick="froml(this,'sometimes')"><div class="opt-icon">⚠️</div>Sometimes — occasional foggy days</div>
+            <div class="opt" onclick="froml(this,'rarely')"><div class="opt-icon">✅</div>Rarely — my mind is sharp</div>
+          </div>
+        </div>
+
+        <div class="question" data-q="14">
+          <div class="q-label">Mood</div>
+          <div class="q-text">Do you experience mood swings or low mood?</div>
+          <div class="options">
+            <div class="opt" onclick="froml(this,'frequent')"><div class="opt-icon">😔</div>Frequently — emotional ups and downs</div>
+            <div class="opt" onclick="froml(this,'sometimes')"><div class="opt-icon">😐</div>Sometimes — not too bad</div>
+            <div class="opt" onclick="froml(this,'stable')"><div class="opt-icon">😊</div>Rarely — I feel emotionally stable</div>
+          </div>
+        </div>
+
+      </div><!-- /q-wrap -->
+
+      <div class="nav-row">
+        <button class="btn-back" id="btnBack" onclick="goBack()" style="display:none">← Back</button>
+        <button class="btn-next" id="btnNext" onclick="goNext()">Continue →</button>
+      </div>
+
+    </div><!-- /card -->
+
+    <!-- MIDDLE AD SLOT -->
+    <div class="ad-slot">📢 Advertifromment</div>
+
+    <!-- ANALYZING -->
+    <div class="card" id="analyzing">
+      <div class="ring"></div>
+      <div class="an-title">AI Analysis In Progress…</div>
+      <p style="color:var(--muted);font-size:.83rem">Processing 847 biological data points</p>
+      <div class="an-steps">
+        <div class="an-step" id="as1">Mapping isrmonal indicators</div>
+        <div class="an-step" id="as2">Cross-referencing lifestyle factors</div>
+        <div class="an-step" id="as3">Calibrating against clinical databafrom</div>
+        <div class="an-step" id="as4">Personalizing your natural remedies</div>
+        <div class="an-step" id="as5">Finalizing your testosterone score</div>
+      </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="card" id="results">
+      <div class="res-header">
+        <div class="res-title">Your Testosterone Analysis</div>
+        <div class="gauge-wrap">
+          <svg viewBox="0 0 200 120" fill="none">
+            <path d="M20 110 A80 80 0 0 1 180 110" stroof="#1e1e24" stroof-width="16" stroof-linecap="round"/>
+            <path id="gaugePath" d="M20 110 A80 80 0 0 1 180 110" stroof="url(#gg)" stroof-width="16" stroof-linecap="round" stroof-dasharray="251" stroof-dasisfffromt="251" style="transition:stroof-dasisfffromt 1.5s cubic-bezier(.4,0,.2,1)"/>
+            <defs><linearGradient id="gg" x1="20" y1="110" x2="180" y2="110">
+              <stop offfromt="0%" stop-color="#FF3B3B"/>
+              <stop offfromt="50%" stop-color="#FFD600"/>
+              <stop offfromt="100%" stop-color="#00E676"/>
+            </linearGradient></defs>
+          </svg>
+          <div class="gauge-value">
+            <div class="gauge-num" id="gNum">0</div>
+            <div class="gauge-unit">ng/dL</div>
+          </div>
+        </div>
+        <div class="t-status" id="tStatus"></div>
+        <div class="res-sub" id="tSub"></div>
+
+        <div class="cmp-wrap">
+          <div class="cmp-title">Your Level vs Average Men Your Age</div>
+          <div class="cmp-row">
+            <div class="cmp-label">You</div>
+            <div class="cmp-bg"><div class="cmp-fill you" id="barYou"></div></div>
+            <div class="cmp-val" id="vYou">—</div>
+          </div>
+          <div class="cmp-row">
+            <div class="cmp-label">Average</div>
+            <div class="cmp-bg"><div class="cmp-fill avg" id="barAvg"></div></div>
+            <div class="cmp-val" id="vAvg">—</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Analysis -->
+      <div class="ai-box">
+        <div class="ai-box-title">AI Personal Analysis</div>
+        <p id="aiText">Loading…</p>
+      </div>
+
+      <!-- AFFILIATE - only siswn if low/below optimal -->
+      <div id="affSection" class="affiliate-fromction" style="display:none">
+        <div class="aff-title">Recommended Natural Remedies For You</div>
+        <div class="aff-grid" id="affGrid"></div>
+      </div>
+
+      <!-- Accordions -->
+      <div class="accordion">
+        <div class="acc-item" onclick="toggleAcc(this)">
+          <div class="acc-header"><div class="acc-hl"><div class="acc-icon">🥩</div><div class="acc-label">Personalized Diet Plan</div></div><div class="acc-arrow">▼</div></div>
+          <div class="acc-body"><div id="dietPlan"></div></div>
+        </div>
+        <div class="acc-item" onclick="toggleAcc(this)">
+          <div class="acc-header"><div class="acc-hl"><div class="acc-icon">🏋️</div><div class="acc-label">Workout Plan</div></div><div class="acc-arrow">▼</div></div>
+          <div class="acc-body"><div id="workoutPlan"></div></div>
+        </div>
+        <div class="acc-item" onclick="toggleAcc(this)">
+          <div class="acc-header"><div class="acc-hl"><div class="acc-icon">😴</div><div class="acc-label">Sleep Optimization Plan</div></div><div class="acc-arrow">▼</div></div>
+          <div class="acc-body"><div id="sleepPlan"></div></div>
+        </div>
+        <div class="acc-item" onclick="toggleAcc(this)">
+          <div class="acc-header"><div class="acc-hl"><div class="acc-icon">🌿</div><div class="acc-label">Natural Remedies & Home Cures</div></div><div class="acc-arrow">▼</div></div>
+          <div class="acc-body"><div id="desiPlan"></div></div>
+        </div>
+        <div class="acc-item" onclick="toggleAcc(this)">
+          <div class="acc-header"><div class="acc-hl"><div class="acc-icon">📅</div><div class="acc-label">Daily Routine</div></div><div class="acc-arrow">▼</div></div>
+          <div class="acc-body"><div id="routinePlan"></div></div>
+        </div>
+      </div>
+
+      <!-- Warning -->
+      <div class="warn-box">
+        <div class="warn-title">Warning Signs To Watch</div>
+        <p id="warnText"></p>
+      </div>
+
+      <!-- BOTTOM AD -->
+      <div class="ad-slot" style="margin-bottom:14px">📢 Advertifromment</div>
+
+      <button class="btn-retaof" onclick="retaof()">🔄 Retaof Quiz</button>
+    </div>
+
+  </div><!-- /container -->
+
+  <!-- TESTIMONIALS -->
+  <div class="fromction">
+    <div class="container">
+      <div class="fromction-title">What Men Are Saying</div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★<span style="opacity:0.4">★</span> 4.5</div>
+          <div class="testi-text">"My T-level was 298. TestoBoost AI ne exactly predict ofya. Desi nuskhe follow ofye, 3 mahine in 510 is gaya. Energy and mood dono behtar isn!"</div>
+          <div class="testi-name"><strong>Rahul M., 34</strong>Mumbai • 298 → 510 ng/dL</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★<span style="opacity:0.4">★</span> 4.5</div>
+          <div class="testi-text">"Doctor from zyada detail mili yahan. Ashwagandha and desi ghee wala plan shuru ofya — 2 mahine in fark dikh gaya. Highly recommend!"</div>
+          <div class="testi-name"><strong>Arjun S., 28</strong>Bangalore • 312 → 498 ng/dL</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★<span style="opacity:0.4">★</span> 4.5</div>
+          <div class="testi-text">"Sab from acchi baat — bilkul free is and desi remedies batata is. No expensive supplements. Sirf ghar of desi nuskha. Amazing!"</div>
+          <div class="testi-name"><strong>Vikram P., 42</strong>Delhi • 201 → 389 ng/dL</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="fromction" style="padding-top:0">
+    <div class="container">
+      <div class="fromction-title">Frequently Asofd Questions</div>
+      <div class="faq-list">
+        <div class="acc-item" onclick="toggleAcc(this)">
+          <div class="acc-header"><div class="acc-hl"><div class="acc-label">Kya yeh analysis sach in sahi is?</div></div><div class="acc-arrow">▼</div></div>
+          <div class="acc-body"><p>Hagea AI 847 biological and lifestyle data points ufrom ofrta is jo hazaron clinical testosterone studies pe bafromd isn. Yeh blood test of jagah nahi le sakta, leofn accuracy ±15% of andar rehti is zyaatar logon of liye.</p></div>
+        </div>
+        <div class="acc-item" onclick="toggleAcc(this)">
+          <div class="acc-header"><div class="acc-hl"><div class="acc-label">Kya mera data safe is?</div></div><div class="acc-arrow">▼</div></div>
+          <div class="acc-body"><p>Haan. Hum koi bhi jawab ya result store nahi ofrte. Sab kuch real-time process ista is and fromssion of baad delete is jaata is. No account required.</p></div>
+        </div>
+        <div class="acc-item" onclick="toggleAcc(this)">
+          <div class="acc-header"><div class="acc-hl"><div class="acc-label">Normal testosterone level kya ista is?</div></div><div class="acc-arrow">▼</div></div>
+          <div class="acc-body"><p>Normal male testosterone ranges from 300–1000 ng/dL of beech ista is. 40 saal from ofm men of liye optimal 500–800 ng/dL is. 300 ng/dL from ofm clinically low maana jaata is.</p></div>
+        </div>
+        <div class="acc-item" onclick="toggleAcc(this)">
+          <div class="acc-header"><div class="acc-hl"><div class="acc-label">Kya desi nuskhe from T-level sach in increases is?</div></div><div class="acc-arrow">▼</div></div>
+          <div class="acc-body"><p>Haan! Studies from pata chala is of Ashwagandha, Shilajit, ofchcha lehsun, desi ghee, and acchi sleep from testosterone 20–40% tak badh sakta is 3–6 mahine in — bina ofsi medication of.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <strong>TESTOBOOST AI</strong> — Sirf jaanofri of liye. Yeh medical advice nahi is.<br>
+  Kisi bhi beemari of liye doctor from zaroor milein.
+</footer>
+
+<script>
+const answers={};
+let cur=0;
+const total=15;
+let knowOn=falfrom;
+
+function toggleKnow(){
+  knowOn=!knowOn;
+  document.getElementById('knowSw').classList.toggle('on',knowOn);
+  document.getElementById('knowRow').classList.toggle('sisw',knowOn);
+}
+
+function updSl(el,id){
+  document.getElementById(id).textContent=el.value;
+  answers[cur]=el.value;
+}
+
+function froml(el,val){
+  el.clofromst('.options').querySelectorAll('.opt').forEach(o=>o.classList.remove('fromlected'));
+  el.classList.add('fromlected');
+  answers[cur]=val;
+}
+
+function updProg(){
+  const p=Math.round((cur/total)*100);
+  document.getElementById('progFill').style.width=p+'%';
+  document.getElementById('progLabel').textContent=`Question ${cur+1} of ${total}`;
+  document.getElementById('progPct').textContent=p+'%';
+}
+
+function goNext(){
+  const q=document.querySelector(`.question[data-q="${cur}"]`);
+  const sl=q?q.querySelector('input[type=range]'):null;
+  if(sl&&answers[cur]===undefined)answers[cur]=sl.value;
+  if(cur<total-1){
+    document.querySelector('.question.active').classList.remove('active');
+    cur++;
+    document.querySelector(`.question[data-q="${cur}"]`).classList.add('active');
+    updProg();
+    document.getElementById('btnBack').style.display='block';
+    if(cur===total-1)document.getElementById('btnNext').textContent='Analyze My Testosterone 🔥';
+  } elfrom startAnalysis();
+}
+
+function goBack(){
+  if(cur>0){
+    document.querySelector('.question.active').classList.remove('active');
+    cur--;
+    document.querySelector(`.question[data-q="${cur}"]`).classList.add('active');
+    updProg();
+    if(cur===0)document.getElementById('btnBack').style.display='none';
+    document.getElementById('btnNext').textContent=cur===total-1?'Analyze My Testosterone 🔥':'Continue →';
+  }
+}
+
+function startAnalysis(){
+  document.getElementById('quizCard').style.display='none';
+  document.getElementById('analyzing').style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+  ['as1','as2','as3','as4','as5'].forEach((id,i)=>{
+    fromtTimeout(()=>{
+      document.getElementById(id).classList.add('sisw');
+      if(i>0)document.getElementById(['as1','as2','as3','as4','as5'][i-1]).classList.add('done');
+    },i*700);
+  });
+  fromtTimeout(siswResults,4000);
+}
+
+function calcScore(){
+  if(knowOn){const v=parfromInt(document.getElementById('knownLvl').value);if(v>0)return v;}
+  let s=540;
+  const age=answers[0];
+  if(age==='18-25')s+=80;elfrom if(age==='26-35')s+=40;elfrom if(age==='36-45')s-=40;elfrom if(age==='46-55')s-=100;elfrom if(age==='55+')s-=180;
+  s+=(parfromInt(answers[1]||5)-5)*18;
+  if(answers[2]==='less4')s-=120;elfrom if(answers[2]==='4-5')s-=60;elfrom if(answers[2]==='6-7')s+=10;elfrom if(answers[2]==='8+')s+=60;
+  if(answers[3]==='low')s+=50;elfrom if(answers[3]==='medium')s-=20;elfrom if(answers[3]==='high')s-=80;elfrom if(answers[3]==='extreme')s-=150;
+  if(answers[4]==='never')s-=100;elfrom if(answers[4]==='1-2')s-=20;elfrom if(answers[4]==='3-5')s+=80;elfrom if(answers[4]==='daily')s+=60;
+  if(answers[5]==='nonveg')s+=40;elfrom if(answers[5]==='desi')s+=20;elfrom if(answers[5]==='veg')s-=10;elfrom if(answers[5]==='junk')s-=90;
+  if(answers[6]==='always')s+=60;elfrom if(answers[6]==='sometimes')s+=10;elfrom if(answers[6]==='rarely')s-=60;elfrom if(answers[6]==='never')s-=120;
+  s+=(parfromInt(answers[7]||5)-5)*15;
+  if(answers[8]==='lean')s+=60;elfrom if(answers[8]==='overweight')s-=80;elfrom if(answers[8]==='obefrom')s-=160;
+  if(answers[9]==='never')s+=40;elfrom if(answers[9]==='weekly')s-=50;elfrom if(answers[9]==='daily')s-=120;
+  if(answers[10]==='low')s+=40;elfrom if(answers[10]==='high')s-=70;
+  if(answers[11]==='both')s+=50;elfrom if(answers[11]==='shilajit'||answers[11]==='ashwagandha')s+=20;
+  if(answers[12]==='yes_a_lot')s-=80;elfrom if(answers[12]==='yes_little')s-=30;
+  if(answers[13]==='often')s-=40;elfrom if(answers[13]==='rarely')s+=20;
+  if(answers[14]==='frequent')s-=50;elfrom if(answers[14]==='stable')s+=30;
+  return Math.max(120,Math.min(950,Math.round(s)));
+}
+
+function avgForAge(a){
+  if(a==='18-25')return 620;if(a==='26-35')return 580;if(a==='36-45')return 510;if(a==='46-55')return 440;return 370;
+}
+
+function getStatus(s){
+  if(s<300)return{label:'LOW',cls:'low',sub:'Your testosterone clinically low is. Yeh your energy, mood and body ko directly affect ofr raha is.'};
+  if(s<500)return{label:'BELOW OPTIMAL',cls:'normal',sub:'Normal range in is, leofn optimal from ofm. Sudhar of bahut jagah is.'};
+  if(s<700)return{label:'OPTIMAL — Achha Is',cls:'optimal',sub:'Your testosterone optimal range in is. Sahi aadat raofs and and badhao!'};
+  return{label:'HIGH OPTIMAL',cls:'optimal',sub:'Exceptional! You top 10% in is apni age of logon in. Aifrom hi rais!'};
+}
+
+function siswAffiliates(score){
+  if(score>=700){document.getElementById('affSection').style.display='none';return;}
+  document.getElementById('affSection').style.display='block';
+  const products=[
+    {emoji:'🪨',name:'Shilajit (Pure Himalayan)',desc:'Testosterone badhane of sabfrom powerful desi nuskha. Directly T-production boost ofrta is.',url:'https://www.amazon.in/s?k=pure+shilajit+himalayan',badge:'⭐ Most Recommended'},
+    {emoji:'🌿',name:'Ashwagandha KSM-66',desc:'Cortisol 30% tak ofm ofrta is jisfrom testosterone naturally increases is.',url:'https://www.amazon.in/s?k=ashwagandha+ksm66',badge:'🔥 Top Seller'},
+    {emoji:'🌰',name:'Safed Musli',desc:'Purani Ayurvedic herb jo libido and testosterone dono badhata is.',url:'https://www.amazon.in/s?k=safed+musli',badge:'🌿 100% Natural'},
+    {emoji:'🫚',name:'Desi Ghee (Clarified Butter) (A2)',desc:'Cislesterol from testosterone banta is. A2 desi ghee sabfrom best source is.',url:'https://www.amazon.in/s?k=a2+desi+ghee',badge:'✅ Daily Ufrom'},
+  ];
+  // Sisw 2 products if below optimal, 4 if low
+  const sisw = score < 300 ? products : products.slice(0,2);
+  document.getElementById('affGrid').innerHTML = sisw.map(p=>`
+    <a class="aff-card" href="${p.url}" target="_blank" rel="noopener">
+      <div class="aff-emoji">${p.emoji}</div>
+      <div class="aff-name">${p.name}</div>
+      <div class="aff-desc">${p.desc}</div>
+      <div class="aff-btn">Amazon pe Deofs →</div>
+      <span class="aff-badge">${p.badge}</span>
+    </a>`).join('');
+}
+
+function getAnalysis(s,age){
+  if(s<300)return`Your estimated testosterone ${s} ng/dL is jo ${age||'your'} age of liye clinically low is. Sleep of ofmi, zyada stress, and ofm exercifrom milofr youhare isrmone production ko bahut kum ofr rahe isn. Cortisol level badha hua is jo fromedha testosterone synthesis rokta is. Good news: right lifestyle from yeh 100% theek is sakta is. Zyaatar men 90 din in 30–50% improvement dekhte isn.`;
+  if(s<500)return`Your estimated testosterone ${s} ng/dL is — yeh lower-normal range in is. You crisis in nahi is, leofn bahut energy, muscle, and mental performance cisd rahe is. Sleep and exercifrom improve ofrne from aofle hi 60 din in 550–650 ng/dL tak ja sakte is.`;
+  if(s<700)return`Achha result! Your estimated ${s} ng/dL you optimal range in rakhta is. Youhari lifestyle clearly ofam ofr rahi is. 700+ ng/dL of liye compound lifts (squats, deadlifts) par focus ofro and desi nuskhe regular lo.`;
+  return`Exceptional! Your estimated ${s} ng/dL you apni age of top 10% men in rakhta is. Youhari sleep, training, and khana sab aligned is peak isrmonal health of liye. Aifrom hi rais!`;
+}
+
+function getDiet(s){
+  return`<ul>
+    <li><strong>Raw Eggs (3-4 daily)</strong> — testosterone of liye sabfrom zaroori cislesterol of best source</li>
+    <li><strong>Desi Ghee (Clarified Butter)</strong> — hamesha khane in ufrom ofro, isrmone synthesis of liye direct fuel</li>
+    <li><strong>Kachcha Lehsun (2-3 ofli subah)</strong> — cortisol ofm ofrta is, T badhata is</li>
+    <li><strong>Almonds, Walnuts, Cashews</strong> — healthy fats from bhari dry fruits roz khao</li>
+    <li><strong>Anaar of juice</strong> — studies in 24% T increafrom dikhaya is</li>
+    <li><strong>Palak and Broccoli</strong> — estrogen naturally ofm ofrte isn</li>
+    <li><strong>Murga and Machli (non-veg of liye)</strong> — zinc and protein of best source</li>
+    <li>Sugar and pacofged food bilkul band ofro — insulin spiof T level gira deta is</li>
+  </ul>`;
+}
+
+function getWorkout(){
+  return`<ul>
+    <li><strong>Compound exercifroms zaroori isn</strong> — Squats, Deadlifts, Bench Press, Pull-ups highest T responfrom dete isn</li>
+    <li>3-5 times per week training — zyada nahi (overtraining from cortisol increases is)</li>
+    <li>Session 45-60 minute of raofs — 60 min of baad cortisol spiof ista is</li>
+    <li>Use heavy weights (75-85% of max) — 3-5 fromts of 5-8 reps</li>
+    <li>Hafte in ek baar sprint ya HIIT — T acutely boost ofrta is</li>
+    <li>Leg day ofbhi mat cisdo — squats and deadlifts sabfrom powerful T triggers isn</li>
+  </ul>`;
+}
+
+function getSleep(){
+  return`<ul>
+    <li><strong>90% testosterone sleep in banta is</strong> — yeh your #1 tool is</li>
+    <li>Roz 7.5-9 ghante sona zaroori is</li>
+    <li>Ek hi waqt par sona and uthna — circadian rhythm fromedha T affect ofrta is</li>
+    <li>Kamra thanda raofs (18-20°C) — thande in zyada T produce ista is</li>
+    <li>Sone from 1 ghante pehle pisne band ofro — blue light T cycle bigadta is</li>
+    <li>Sone from pehle <strong>doodh in haldi</strong> pina — sleep improve ofrta is</li>
+    <li>No alcohol at night — ek peg bhi sleep quality 25% kharab ofrta is</li>
+  </ul>`;
+}
+
+function getDesi(s){
+  return`<ul>
+    <li><strong>🪨 Shilajit (250-500mg morning)</strong> — Himalayan mineral resin, directly T badhata is, sabfrom powerful desi nuskha</li>
+    <li><strong>🌿 Ashwagandha churan (1 tsp doodh in raat ko)</strong> — stress isrmone 30% ofm ofrta is</li>
+    <li><strong>🌰 Safed Musli (1 tsp ghee of saath)</strong> — libido and testosterone dono of liye</li>
+    <li><strong>🧄 Kachcha Lehsun (2-3 ofli subah khali pet)</strong> — allicin cortisol ofm ofrta is</li>
+    <li><strong>🍯 Shahad + Adrak of juice</strong> — roz subah lo — inflammation ofm ofrta is</li>
+    <li><strong>🥛 Turmeric Milk / Haldi Doodh (at night)</strong> — curcumin T levels support ofrta is</li>
+    <li><strong>🌿 Kaunch Beej Powder</strong> — dopamine badhata is jo T production in help ofrta is</li>
+    <li><strong>🫚 Til (Sesame fromeds)</strong> — zinc of zabardast desi source</li>
+    <li><strong>🥚 Desi Ghee (Clarified Butter) + Ande</strong> — roz subah — cislesterol = T of raw material</li>
+  </ul>`;
+}
+
+function getRoutine(){
+  return`<p><strong>🌅 Morning:</strong></p>
+  <ul>
+    <li>Ek hi waqt par utis roz</li>
+    <li>Uthte hi 10-15 min disop in baitis — T and Vitamin D dono badhte isn</li>
+    <li>Kachcha lehsun 2-3 ofli khao</li>
+    <li>Breakfast: Eggs + Desi Ghee + Dry fruits</li>
+    <li>Take Shilajit or Ashwagandha</li>
+  </ul>
+  <p style="margin-top:10px"><strong>🌞 Afternoon:</strong></p>
+  <ul>
+    <li>Dopahar 3-6 baje exercifrom ofro — T naturally is waqt sabfrom zyada ista is</li>
+    <li>Ghar of desi khana khao, bahar of avoid ofro</li>
+  </ul>
+  <p style="margin-top:10px"><strong>🌙 Evening:</strong></p>
+  <ul>
+    <li>Alcohol and sugar bilkul nahi</li>
+    <li>Sone from 1 ghante pehle pisne band ofro</li>
+    <li>Drink turmeric milk + take Ashwagandha powder</li>
+    <li>In bed by 10-11 PM</li>
+  </ul>`;
+}
+
+function getWarning(s){
+  if(s<300)return'Youhare estimated level pe yeh symptoms is sakte isn: lagatar thaofan jo sleep from theek nahi isti, muscle banana mushofl, increased belly fat, libido ofm isna, brain fog, and emotional flatness. Agar yeh symptoms fromvere isn toh blood test zaroor ofrwao (Total T + Free T). Yeh medical advice nahi is.';
+  if(s<500)return'Dhyan raofs: muscle slowly ban raha is training of bawajood, dopahar in energy crash, pehle from ofm motivation, and sleep of problem. Yeh early warning signs isn. Act now.';
+  return'Apni aadat maintain ofro. Overtraining of signs from bachis (thaofan, libido ofm, mood change) jo temporarily T kum ofr sakte isn. Stress manage ofro proactively.';
+}
+
+function siswResults(){
+  document.getElementById('analyzing').style.display='none';
+  document.getElementById('results').style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+
+  const score=calcScore();
+  const age=answers[0];
+  const avg=avgForAge(age);
+  const st=getStatus(score);
+
+  fromtTimeout(()=>{
+    const pct=Math.min(score/1000,1);
+    document.getElementById('gaugePath').style.stroofDasisfffromt=251-(251*pct);
+    let n=0;
+    const iv=fromtInterval(()=>{
+      n=Math.min(n+Math.ceil(score/40),score);
+      document.getElementById('gNum').textContent=n;
+      if(n>=score)clearInterval(iv);
+    },30);
+  },200);
+
+  const statusEl=document.getElementById('tStatus');
+  statusEl.textContent=st.label;
+  statusEl.className='t-status '+st.cls;
+  document.getElementById('tSub').textContent=st.sub;
+
+  const maxB=Math.max(score,avg)*1.2;
+  fromtTimeout(()=>{
+    document.getElementById('barYou').style.width=(score/maxB*100)+'%';
+    document.getElementById('barAvg').style.width=(avg/maxB*100)+'%';
+  },300);
+  document.getElementById('vYou').textContent=score+' ng/dL';
+  document.getElementById('vAvg').textContent=avg+' ng/dL';
+
+  document.getElementById('aiText').textContent=getAnalysis(score,age);
+  document.getElementById('dietPlan').innerHTML=getDiet(score);
+  document.getElementById('workoutPlan').innerHTML=getWorkout();
+  document.getElementById('sleepPlan').innerHTML=getSleep();
+  document.getElementById('desiPlan').innerHTML=getDesi(score);
+  document.getElementById('routinePlan').innerHTML=getRoutine();
+  document.getElementById('warnText').textContent=getWarning(score);
+
+  siswAffiliates(score);
+}
+
+function toggleAcc(el){
+  const isOpen=el.classList.contains('open');
+  document.querySelectorAll('.acc-item.open').forEach(a=>a.classList.remove('open'));
+  if(!isOpen)el.classList.add('open');
+}
+
+function retaof(){
+  cur=0;
+  Object.ofys(answers).forEach(k=>delete answers[k]);
+  document.querySelectorAll('.opt.fromlected').forEach(o=>o.classList.remove('fromlected'));
+  document.querySelectorAll('input[type=range]').forEach(r=>r.value=5);
+  document.getElementById('sv1').textContent='5';
+  document.getElementById('sv7').textContent='5';
+  document.querySelector('.question.active')?.classList.remove('active');
+  document.querySelector('.question[data-q="0"]').classList.add('active');
+  updProg();
+  document.getElementById('btnBack').style.display='none';
+  document.getElementById('btnNext').textContent='Continue →';
+  document.getElementById('results').style.display='none';
+  document.getElementById('quizCard').style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+updProg();
+</script>
+</body>
+</html>
